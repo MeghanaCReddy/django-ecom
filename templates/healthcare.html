@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>ECOM</h1>
+        </div>
+        <div class="links">
+            <a href="{% url 'home' %}">HOME</a>
+            <a href="{% url 'fashion' %}">FASHION</a>
+            <a href="{% url 'healthcare' %}">HEALTHCARE</a>
+            <a href="{% url 'grocery' %}">GROCERY</a>
+            <a href="{% url 'electronic' %}">ELECTRONIC</a>
+            <a href="{% url 'about' %}">ABOUT</a>
+        </div>
+    </nav>
+    <h1>This is healthcare page</h1>
+</body>
+</html>
